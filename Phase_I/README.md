@@ -32,7 +32,29 @@ uv pip install -e .  # Install the package in development mode
 
 ## Usage
 
-Run the console application:
+### Prerequisites
+- Python 3.8+ (Python 3.13+ recommended as per original specification)
+- UV package manager (install with `pip install uv`)
+
+### Quick Start
+1. Clone the repository
+2. Navigate to the Phase_I directory: `cd Phase_I`
+3. Create a virtual environment: `uv venv`
+4. Activate the virtual environment: `source .venv/bin/activate` (Linux/Mac) or `source .venv\Scripts\activate` (Windows)
+5. Install the package in development mode: `uv pip install -e .`
+6. Run the application: `python -m src.main`
+
+### Alternative Quick Start (if you have Python 3 and pip available):
+1. Install UV package manager: `pip install uv`
+2. Navigate to the Phase_I directory: `cd Phase_I`
+3. Create and activate virtual environment and install dependencies in one command:
+   ```bash
+   uv venv && source .venv/bin/activate && uv pip install -e .
+   ```
+4. Run the application: `python -m src.main`
+
+### Running the Application
+After following the setup steps above, run the console application:
 ```bash
 python -m src.main
 ```

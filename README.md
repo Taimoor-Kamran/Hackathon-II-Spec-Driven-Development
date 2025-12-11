@@ -18,6 +18,42 @@ The Evolution of Todo is a 5-phase project that takes a simple console applicati
 
 Each phase is contained in its own directory with its own documentation and implementation. Start with Phase I and work your way through sequentially.
 
+### Running Phase I
+
+To run the Phase I Todo In-Memory Python Console App:
+
+1. **Prerequisites:**
+   - Python 3.13+
+   - UV package manager (install with `pip install uv`)
+
+2. **Quick Setup:**
+   ```bash
+   # Clone the repository
+   git clone <repository-url>
+   cd Hackathon_II/Phase_I
+
+   # Create virtual environment
+   uv venv
+
+   # Activate virtual environment
+   source .venv/bin/activate  # On Linux/Mac
+   # or
+   source .venv\Scripts\activate  # On Windows
+
+   # Install the application
+   uv pip install -e .
+
+   # Run the application
+   python -m src.main
+   ```
+
+3. **Alternative:**
+   You can also run the application using the provided runner script:
+   ```bash
+   cd Hackathon_II/Phase_I
+   python run_app.py
+   ```
+
 ## Development Workflow
 
 This project follows the Space-Driven Development workflow:
