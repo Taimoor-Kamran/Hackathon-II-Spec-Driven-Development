@@ -16,7 +16,7 @@ export default function LoginPage() {
 
     try {
       // Call the backend login API
-      const response = await fetch('http://localhost:8000/auth/login', {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/auth/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded', // Using form encoding for login

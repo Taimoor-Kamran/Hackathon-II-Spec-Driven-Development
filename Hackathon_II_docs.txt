@@ -222,8 +222,8 @@ Requirements
 Implement all 5 Basic Level features as a web application
 Create RESTful API endpoints
 Build responsive frontend interface
-Store data in Neon Serverless PostgreSQL database
-Authentication – Implement user signup/signin using Better Auth
+Store data in SQLite database (for local development) with PostgreSQL option
+Authentication – Implement user signup/signin using JWT-based authentication with proper user isolation
 Technology Stack
 Layer
 Technology
@@ -234,34 +234,43 @@ Python FastAPI
 ORM
 SQLModel
 Database
-Neon Serverless PostgreSQL
+SQLite (local development) with PostgreSQL option
 Spec-Driven
 Claude Code + Spec-Kit Plus
 Authentication
-Better Auth
+JWT-based with bcrypt password hashing
 
 API Endpoints
 Method
 Endpoint
 Description
+POST
+/auth/register
+Register a new user
+POST
+/auth/login
+Login and get JWT token
+GET
+/auth/me
+Get current user info from token
 GET
 /api/{user_id}/tasks
-List all tasks
+List all tasks for a user
 POST
 /api/{user_id}/tasks
-Create a new task
+Create a new task for a user
 GET
-/api/{user_id}/tasks/{id}
-Get task details
+/api/{user_id}/tasks/{task_id}
+Get a specific task for a user
 PUT
-/api/{user_id}/tasks/{id}
-Update a task
+/api/{user_id}/tasks/{task_id}
+Update a specific task for a user
 DELETE
-/api/{user_id}tasks/{id}
-Delete a task
+/api/{user_id}/tasks/{task_id}
+Delete a specific task for a user
 PATCH
-/api/{user_id}tasks/{id}/complete
-Toggle completion
+/api/{user_id}/tasks/{task_id}/complete
+Toggle completion status of a task
 
 
 Securing the REST API
