@@ -1,0 +1,96 @@
+# Phase II: Todo Full-Stack Web Application - Constitution
+
+## Project Identity
+**Project Name:** Phase II - Todo Full-Stack Web Application
+**Mission:** Transform the Phase I console application into a modern multi-user web application with persistent storage using Next.js, FastAPI, SQLModel, and Neon Serverless PostgreSQL.
+
+## Core Principles
+
+### 1. Full-Stack Architecture
+- Frontend: Next.js 16+ with App Router
+- Backend: Python FastAPI
+- ORM: SQLModel for database operations
+- Database: Neon Serverless PostgreSQL
+- Authentication: Better Auth with JWT tokens
+
+### 2. Multi-User Support
+- Each user has isolated data
+- Authentication required for all operations
+- User-specific task management
+- Secure API endpoints with JWT validation
+
+### 3. RESTful API Design
+- Follow REST conventions
+- Proper HTTP status codes
+- Consistent endpoint patterns
+- Standard request/response formats
+
+### 4. Spec-Driven Development
+- All features must be specified before implementation
+- Claude Code must reference specifications using @specs/ notation
+- Specifications are living documents that evolve with the project
+
+### 5. Quality Gates
+- All code must pass through Claude Code for implementation
+- No manual coding - only specification refinement until Claude Code generates correct output
+- Each endpoint must be tested before progression
+- Proper error handling and validation
+
+## Phase-Specific Principles
+
+### Phase II: Full-Stack Web Application
+- Implement all 5 Basic Level features as a web application
+- Create RESTful API endpoints with proper authentication
+- Build responsive frontend interface
+- Store data in Neon Serverless PostgreSQL database
+- Implement user authentication with Better Auth and JWT tokens
+- Follow clean architecture principles between frontend and backend
+
+## Technology Stack Commitments
+
+### Core Stack
+- Next.js 16+ (App Router) for frontend
+- Python FastAPI for backend
+- SQLModel for ORM
+- Neon Serverless PostgreSQL for database
+- Better Auth for authentication
+- Claude Code + Spec-Kit Plus for all development
+
+### API Endpoints
+- GET /api/{user_id}/tasks - List all tasks for user
+- POST /api/{user_id}/tasks - Create a new task
+- GET /api/{user_id}/tasks/{id} - Get task details
+- PUT /api/{user_id}/tasks/{id} - Update a task
+- DELETE /api/{user_id}/tasks/{id} - Delete a task
+- PATCH /api/{user_id}/tasks/{id}/complete - Toggle completion
+
+### Quality Tools
+- Git for version control
+- Proper testing at each endpoint
+- Frontend and backend integration tests
+
+## Workflow Commitments
+
+### Development Workflow
+1. Constitution (/sp.constitution): Define/update project principles
+2. Specify (/sp.specify): Create features specification with user stories
+3. Clarify (/sp.clarify): Resolve ambiguities in specifications
+4. Plan (/sp.plan): Generate technical implementation plan
+5. Tasks (/sp.tasks): Break down into actionable, testable tasks
+6. Implement (/sp.implement): Execute tasks using Red-Green-Refactor
+7. Document (/sp.adr): Record architectural decisions when significant
+8. Record (/sp.phr): Create prompt History Records for traceability
+
+### Quality Gates
+- Each API endpoint must be functional before progression
+- Frontend integration with backend must work properly
+- Authentication must be properly implemented
+- Database operations must be secure and efficient
+- All 5 Basic Level features must work in web interface
+
+## Success Metrics
+- All API endpoints implemented and tested
+- Frontend interface allows all 5 Basic Level operations
+- Proper authentication and user isolation
+- Clean, maintainable code generated through Claude Code
+- Successful integration between frontend and backend

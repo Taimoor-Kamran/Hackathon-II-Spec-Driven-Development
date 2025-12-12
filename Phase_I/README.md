@@ -59,6 +59,36 @@ After following the setup steps above, run the console application:
 python -m src.main
 ```
 
+### Testing the Application
+
+#### Manual Testing
+Follow the usage instructions above to manually test all features:
+- Add tasks with `add "title" "description"`
+- List tasks with `list`
+- Update tasks with `update <id> "title" "description"`
+- Delete tasks with `delete <id>`
+- Mark complete/incomplete with `complete <id>` or `incomplete <id>`
+- Get help with `help`
+- Exit with `quit` or `exit`
+
+#### Automated Testing
+Run the automated test suite:
+```bash
+python test_phase1.py
+```
+
+Run the demo script:
+```bash
+python demo_phase1.py
+```
+
+Use the convenience runner script:
+```bash
+python run_app.py
+```
+
+For detailed testing instructions, see [TESTING_GUIDE.md](TESTING_GUIDE.md).
+
 ### Available Commands
 - `add "task title" "optional description"` - Add a new task
 - `list` - Display all tasks

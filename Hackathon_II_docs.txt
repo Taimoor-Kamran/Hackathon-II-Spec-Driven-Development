@@ -1538,3 +1538,17 @@ Q: What if I don't complete all the phases?
 A: Submit what you complete. Partial submissions are evaluated proportionally.
 Good luck, and may your specs be clear and your code be clean! 🚀
 — The Panaversity, PIAIC, and GIAIC Teams
+
+# SPEC-KIT PLUS WORKFLOW (MANDATORY - FOLLOW EXACTLY)
+
+1. /sp.constitution → Define project principles
+2. /sp.specify → Create features with user stories
+3. /sp.clarify → Resolve ambiguities
+4. /sp.plan → Technical implementation plan
+5. /sp.tasks → Break into testable tasks
+6. /sp.implement → Red-Green-Refactor
+7. /sp.adr → Record decisions
+8. /sp.phr → Prompt history
+
+**NEVER SKIP ANY STEP. ALWAYS RUN IN ORDER.**
+**AFTER EACH COMMAND, WAIT FOR `yes` CONFIRMATION.**
