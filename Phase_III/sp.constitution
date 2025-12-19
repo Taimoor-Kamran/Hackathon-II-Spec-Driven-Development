@@ -1,0 +1,119 @@
+# Phase III: Advanced Todo Web Application - Constitution
+
+## Project Identity
+**Project Name:** Phase III - Advanced Todo Web Application
+**Mission:** Enhance the Phase II todo application with advanced features including AI-powered task suggestions, real-time collaboration, advanced filtering and search capabilities, task categorization and tagging, due dates and reminders, and recurring tasks functionality.
+
+## Core Principles
+
+### 1. Full-Stack Architecture
+- Frontend: Next.js 16+ with App Router and advanced state management
+- Backend: Python FastAPI with async support and advanced features
+- ORM: SQLModel for database operations with enhanced relationships
+- Database: SQLite (for local development) with PostgreSQL compatibility
+- Authentication: JWT-based with enhanced security features
+
+### 2. Multi-User Support with Advanced Features
+- Each user has isolated data with advanced permissions
+- Authentication required for all operations
+- User-specific advanced task management (categories, tags, due dates, etc.)
+- Secure API endpoints with JWT validation and user ID matching
+- Real-time collaboration features between authorized users
+
+### 3. RESTful API Design with Advanced Endpoints
+- Follow REST conventions
+- Proper HTTP status codes
+- Consistent endpoint patterns
+- Standard request/response formats
+- Advanced filtering, search, and sorting capabilities
+- Real-time WebSocket endpoints for collaboration
+
+### 4. Spec-Driven Development
+- All features must be specified before implementation
+- Claude Code must reference specifications using @specs/ notation
+- Specifications are living documents that evolve with the project
+- Each advanced feature must be thoroughly documented before implementation
+
+### 5. Quality Gates
+- All code must pass through Claude Code for implementation
+- No manual coding - only specification refinement until Claude Code generates correct output
+- Each endpoint must be tested before progression
+- Proper error handling and validation
+- Advanced features must be fully tested before progression
+
+## Phase-Specific Principles
+
+### Phase III: Advanced Features Implementation
+- Implement AI-powered task suggestions and smart recommendations
+- Create real-time collaboration features for team task management
+- Build advanced filtering and search capabilities with multiple criteria
+- Implement task categorization and tagging system
+- Add due dates and reminder functionality with notifications
+- Create recurring tasks with customizable patterns
+- Enhance the user interface with advanced components and better UX
+- Implement comprehensive reporting and analytics features
+
+## Technology Stack Commitments
+
+### Core Stack
+- Next.js 16+ (App Router) for frontend with advanced features
+- Python FastAPI for backend with async support
+- SQLModel for ORM with enhanced relationships
+- SQLite (local development) with PostgreSQL option for database
+- JWT-based authentication with enhanced security
+- Claude Code + Spec-Kit Plus for all development
+- WebSocket for real-time features
+- Advanced state management libraries (e.g., Zustand, Redux Toolkit)
+
+### Advanced API Endpoints
+- POST /api/{user_id}/tasks/suggest - AI-powered task suggestions
+- POST /api/{user_id}/tasks/{task_id}/collaborate - Add collaborators to tasks
+- GET /api/{user_id}/tasks/search - Advanced search with filters
+- POST /api/{user_id}/categories - Create task categories
+- POST /api/{user_id}/tags - Create and manage tags
+- POST /api/{user_id}/reminders - Set task reminders
+- POST /api/{user_id}/tasks/{task_id}/recurring - Set recurring tasks
+- WebSocket endpoints for real-time collaboration
+
+### Quality Tools
+- Git for version control
+- Proper testing at each endpoint
+- Frontend and backend integration tests
+- Unit tests for advanced features
+- Performance testing for real-time features
+
+## Workflow Commitments
+
+### Development Workflow
+1. Constitution (/sp.constitution): Define/update project principles
+2. Specify (/sp.specify): Create features specification with user stories
+3. Clarify (/sp.clarify): Resolve ambiguities in specifications
+4. Plan (/sp.plan): Generate technical implementation plan
+5. Tasks (/sp.tasks): Break down into actionable, testable tasks
+6. Implement (/sp.implement): Execute tasks using Red-Green-Refactor
+7. Document (/sp.adr): Record architectural decisions when significant
+8. Record (/sp.phr): Create prompt History Records for traceability
+
+### Quality Gates
+- Each advanced API endpoint must be functional before progression
+- Real-time features must work properly with WebSocket connections
+- AI-powered suggestions must provide meaningful recommendations
+- Collaboration features must handle multiple users correctly
+- Advanced filtering and search must work efficiently
+- All new features must integrate properly with existing Phase II functionality
+- Performance must remain acceptable with advanced features
+- Security must be maintained with new advanced features
+
+## Success Metrics
+- All advanced features implemented and tested
+- Frontend interface allows all new advanced operations
+- Real-time collaboration works without conflicts
+- AI-powered suggestions provide meaningful recommendations
+- Advanced search and filtering work efficiently
+- Task categorization and tagging system functions properly
+- Due dates and reminders work reliably
+- Recurring tasks work with customizable patterns
+- Clean, maintainable code generated through Claude Code
+- Successful integration with existing Phase II functionality
+- Proper error handling and input validation throughout
+- Performance remains acceptable with all advanced features

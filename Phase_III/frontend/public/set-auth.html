@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Set Auth Token</title>
+</head>
+<body>
+    <h1>Setting Authentication Token</h1>
+    <p>This page will set the authentication token in localStorage for testing.</p>
+
+    <script>
+        // Set the authentication token we obtained earlier
+        const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzY1NTg1NjU0fQ.6ZLLcx70K-MhUijjhJIttVxSacItzoLqHiypZgHJOj8";
+
+        localStorage.setItem('authToken', token);
+
+        // Set the user ID
+        localStorage.setItem('userId', '2');
+
+        console.log('Authentication token and user ID have been set in localStorage');
+        console.log('Token:', token);
+        console.log('User ID: 2');
+
+        // Redirect to the main page
+        window.location.href = '/';
+    </script>
+</body>
+</html>
